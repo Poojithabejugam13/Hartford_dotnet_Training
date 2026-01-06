@@ -1,0 +1,10 @@
+/* external css */
+.book>div{
+    display:flex;
+    flex-direction:column;
+}
+.book>div>div{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
