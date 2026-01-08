@@ -248,3 +248,68 @@ h4{
   color:#555;
 }
 
+@media only screen and (max-width: 1018px) {
+  .stat2{
+    display:flex;
+    flex-wrap:wrap;
+    gap:17px;
+
+    justify-content: space-around;
+  }
+  .statsRow{
+     height:441px;
+  }
+ 
+}
+@media only screen and (max-width:988px){
+  .f2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+  }
+}
+@media only screen and (max-width:597px){
+  .f2{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+   .statBox{
+    width:177px;
+    height:147px;
+    padding:10px;
+   
+  }
+  .statsBox{
+    gap:-7px;
+  }
+  .hero{
+    font-size: 2.1em;
+    height:350px;
+  }
+}
+@media only screen and (max-width:518px){
+  .statBox{
+    width:107px;
+    height:107px;
+    border-radius:48%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap:0px;
+  }
+  .statNum{
+    font-size: 34px;
+    font-weight:8;
+
+  }
+  .statLabel{
+    font-size: 12px;
+    font-weight:6;
+  }
+  .hero{
+    font-size: 1.8em;
+    height:300px;
+  }
+}
