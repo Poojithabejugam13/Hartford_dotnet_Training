@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" 
+    rel="stylesheet">
+</head>
+ 
+<body>
+    <div class="ecommerce p-7">
+        <div class="flex justify-between items-center p-8">
+            <p class="text-4xl font-bold">Sneakers</p>
+            <div class="lg:flex justify-between space-x-8 md:flex justify-between space-x-1 sm:hidden hidden">
+                 <p class="md:hidden lg:block">Collections</p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>About</p>
+            <p>Contact</p>
+            </div>
+           <div class="flex justify between space-x-8">
+            <img class="w-8 h-8" src="../imgs/cart.jpeg" alt="">
+            <img class="w-8 h-8" src="../imgs/profiles.jpeg" alt="">
+           </div>
+        </div>
+        <hr class="w-18"/>
+        <div class="grid grid-cols-2 gap-4 lg:gap-24">
+            <div class="grid grid-rows-[3fr 1fr] ">
+                <div class="pl-12"> 
+                <img   class="w-40 h-40 sm:w-80 h-80 md:w-80 md:h-80 lg:w-80 lg:h-80" src="../imgs/Screenshot 2026-01-08 151555.png" alt="">
+                </div>
+                <div class="flex flex-cols justify-around w-2/3 pl-14 md:gap-8">
+                <img class="hidden sm:hidden md:hidden lg:block lg:w-24 h-24" src="../imgs/Screenshot 2026-01-08 155935.png" alt="">
+                <img class="hidden sm:block md:w-48 h-24 lg:w-24 h-24"src="../imgs/Screenshot 2026-01-08 155939.png" alt="">
+                <img class="hidden sm:block md:w-48 h-24 lg:w-24 h-24" src="../imgs/Screenshot 2026-01-08 160020.png" alt="">
+                </div>    
+            </div>
+            <div class="w-2/3  ">
+                <p style="color:Orange" class="font-bold mt-8">SNEAKER COMPANY</p>
+                <h1 class="text-xl md:text-4l font-serif font-bold mt-4 pr-41px lg:text-4xl font-serif font-bold mt-4 pr-41px">Fall Limited Edition Sneakers</h1>
+                <p class="hidden sm:block md:block lg:block mt-6 text-gray-600">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div class="gap-12 sm:flex items-center flex-cols gap-14 md:flex items-center flex-cols gap-14 lg:flex items-center flex-cols gap-14" mt-6">
+                    <p class="text-4xl pt-4 font-bold">₹1800</p>
+                    <h4 style="color:orange;" class="font-extrabold text-4xl pt-4 bg-orange-100">50%</h4>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
