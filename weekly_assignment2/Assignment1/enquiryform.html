@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Insurance Enquiry & Feedback</title>
+  <link rel="stylesheet" href="./enquiryform.css" />
+</head>
+<body>
+<div class="form-container">
+  <h2>Insurance Enquiry & Feedback Form</h2>
+  <p>Please submit your policy-related queries or feedback</p>
+
+  <form id="enquiryForm">
+    <input type="text" id="name" name="name" placeholder="Full Name" />
+    <p class="errormsg"></p>
+
+    <input type="email" id="email" name="email" placeholder="Email" />
+    <p class="errormsg"></p>
+
+    <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" />
+    <p class="errormsg"></p>
+
+    <select id="requestType">
+      <option value="">Select Request Type</option>
+      <option>Policy Enquiry</option>
+      <option>Claim Related</option>
+      <option>Feedback</option>
+    </select>
+    <p class="errormsg"></p>
+
+    <select id="policyType">
+      <option value="">Select Policy Type</option>
+      <option>Health Insurance</option>
+      <option>Life Insurance</option>
+      <option>Vehicle Insurance</option>
+      <option>Home Insurance</option>
+    </select>
+    <p class="errormsg"></p>
+
+    <textarea id="message" placeholder="Message"></textarea>
+    <p class="errormsg"></p>
+
+    <div class="rating">
+      <label>Rate our Service:</label>
+
+      <div class="opt">
+        <label class="rating-item">
+          <input type="radio" name="rating" value="1" />
+          <span>1</span>
+        </label>
+
+        <label class="rating-item">
+          <input type="radio" name="rating" value="2" />
+          <span>2</span>
+        </label>
+
+        <label class="rating-item">
+          <input type="radio" name="rating" value="3" />
+          <span>3</span>
+        </label>
+
+        <label class="rating-item">
+          <input type="radio" name="rating" value="4" />
+          <span>4</span>
+        </label>
+
+        <label class="rating-item">
+          <input type="radio" name="rating" value="5" />
+          <span>5</span>
+        </label>
+      </div>
+    </div>
+    <p class="errormsg"></p>
+
+    <button type="submit">Submit</button>
+    <p id="success"></p>
+  </form>
+</div>
+
+<script src="./enquiryform.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TheHartford Insurance Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<header class="fixed top-0 w-full bg-slate-900 text-white z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
+    <h1 class="text-xl font-semibold">TheHartford</h1>
+
+    <button id="menuBtn" class="sm:hidden focus:outline-none">
+      <div class="w-6 h-0.5 bg-white mb-1"></div>
+      <div class="w-6 h-0.5 bg-white mb-1"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+    </button>
+
+    <nav id="menu"
+         class="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6
+                absolute sm:static top-16 left-0 w-full sm:w-auto
+                bg-slate-900 sm:bg-transparent px-4 sm:px-0 py-4 sm:py-0">
+      <a href="#overview" class="block">Overview</a>
+      <a href="#plans" class="block">Plans</a>
+      <a href="#enquiry" class="block">Enquiry</a>
+      <a href="#customers" class="block">Customers</a>
+    </nav>
+  </div>
+</header>
+<section id="overview" class="pt-32 bg-blue-900 text-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-8 py-20">
+    <div>
+      <h2 class="text-4xl font-bold mb-3">Insurance made simple</h2>
+      <p class="text-blue-100">Manage insurance enquiries and customers efficiently</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="bg-white text-blue-900 p-6 rounded-xl shadow text-center">
+        <span id="customerCount" class="text-3xl font-bold">0</span>
+        <p>Customers</p>
+      </div>
+      <div class="bg-white text-blue-900 p-6 rounded-xl shadow text-center">
+        <span id="policyCount" class="text-3xl font-bold">0</span>
+        <p>Policies</p>
+      </div>
+      <div class="bg-white text-blue-900 p-6 rounded-xl shadow text-center">
+        ₹<span id="totalPremium" class="text-3xl font-bold">0</span>
+        <p>Total Premium</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plans" class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+  <h2 class="text-2xl font-semibold mb-6">Insurance Plans</h2>
+  <div id="planCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<section id="enquiry" class="max-w-3xl mx-auto px-4 sm:px-8 py-16">
+  <h2 class="text-2xl font-semibold mb-6">Customer Enquiry</h2>
+
+  <form id="enquiryForm"
+        class="bg-white p-8 rounded-xl shadow grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <div>
+      <label class="block font-medium">Customer Name</label>
+      <input id="name" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      <p class="text-red-500 text-sm"></p>
+    </div>
+
+    <div>
+      <label class="block font-medium">Age</label>
+      <input id="age" type="number" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      <p class="text-red-500 text-sm"></p>
+    </div>
+
+    <div>
+      <label class="block font-medium">Email</label>
+      <input id="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      <p class="text-red-500 text-sm"></p>
+    </div>
+
+    <div>
+      <label class="block font-medium">Policy Type</label>
+      <select id="policy" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+        <option value="">Select Policy</option>
+      </select>
+      <p class="text-red-500 text-sm"></p>
+    </div>
+
+    <div class="md:col-span-2">
+      <label class="block font-medium">
+        Coverage Amount: ₹<span id="coverageValue">100000</span>
+      </label>
+      <input id="coverage" type="range" min="100000" max="1000000" step="100000"
+             class="w-full accent-blue-600">
+    </div>
+
+    <div>
+      <label class="block font-medium">Estimated Premium</label>
+      <input id="premium" readonly
+             class="w-full p-3 border rounded-lg bg-gray-100">
+    </div>
+
+    <button class="md:col-span-2 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+      Submit Enquiry
+    </button>
+  </form>
+</section>
+
+<section id="customers" class="max-w-5xl mx-auto px-4 sm:px-8 py-16">
+  <h2 class="text-2xl font-semibold mb-4">Customer List</h2>
+
+  <div class="flex flex-col sm:flex-row gap-4 mb-4">
+    <input id="searchInput" placeholder="Search by name"
+           class="w-full p-3 border rounded-lg">
+    <select id="filterPolicy" class="p-3 border rounded-lg">
+      <option value="">All Policies</option>
+    </select>
+  </div>
+
+  <div class="overflow-x-auto">
+    <table class="min-w-[700px] w-full bg-white shadow text-center">
+      <thead class="bg-blue-600 text-white">
+        <tr>
+          <th class="p-3">Name</th>
+          <th class="p-3">Age</th>
+          <th class="p-3">Policy</th>
+          <th class="p-3">Coverage</th>
+          <th class="p-3">Premium</th>
+        </tr>
+      </thead>
+      <tbody id="customerTable"></tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-white text-center py-4">
+  © 2026 TheHartford
+</footer>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+ 
+  box-shadow: 4px 4px 18px grey;
+ 
+}
+
+h2 {
+  text-align: center;
+  color: #1e40af;
+}
+
+p {
+  text-align: center;
+  color: #d531bd;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.opt{
+  width:auto;
+}
+
+.rating label {
+  display: block;
+  text-align: left;
+  color: black;
+  margin-top: 10px;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e3a8a;
+}
+
+.errormsg {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}
+
+#success {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+input[type="radio"] {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #1e40af;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 1px 4px 18px grey;
+}
+
+.rating-options label,
+.rating-item,
+input[type="radio"] {
+  cursor: pointer;
+}
