@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Policy CRUD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <form id="postForm" class="bg-white p-4 rounded shadow max-w-md mx-auto space-y-3">
+    <h2 class="font-bold text-center">Add Policy</h2>
+    <input id="name" placeholder="Name" class="w-full border p-2" required />
+    <input id="type" placeholder="Type" class="w-full border p-2" required />
+    <input id="premium" placeholder="Premium" class="w-full border p-2" required />
+    <input id="duration" placeholder="Duration" class="w-full border p-2" required />
+    <input id="status" placeholder="Status" class="w-full border p-2" required />
+    <button class="bg-blue-600 text-white w-full p-2 rounded">Add</button>
+  </form>
+  <form id="editForm" class="bg-white p-4 rounded shadow max-w-md mx-auto space-y-3 hidden">
+    <h2 class="font-bold text-center">Edit Policy</h2>
+    <input id="editName" class="w-full border p-2" required />
+    <input id="editType" class="w-full border p-2" required />
+    <input id="editPremium" class="w-full border p-2" required />
+    <input id="editDuration" class="w-full border p-2" required />
+    <input id="editStatus" class="w-full border p-2" required />
+    <button class="bg-green-600 text-white w-full p-2 rounded">Update</button>
+  </form>
+  <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6"></div>
+  <script src="restapi.js"></script>
+</body>
+</html>
