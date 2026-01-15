@@ -7,7 +7,7 @@ const paySection = document.querySelector(".paymentSection");
 const payBtn = document.getElementById("payBtn");
 
 paySection.addEventListener("click", () => {
-  element1.textContent = "Parent div activated first due to event bubbling";
+  element1.textContent = "Parent div activated due to event bubbling";
 });
 
 payBtn.addEventListener("click", () => {
@@ -60,3 +60,4 @@ approveBtn.addEventListener("click", (e) => {
 // });
 //With stopPropagation only Capturing and Target executes
 //Without stopPropagation all Capturing ,target and bubblin executes
+
