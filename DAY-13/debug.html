@@ -1,0 +1,164 @@
+<p>TASK 1: Form Not Submitting (HTML + JS)</p>
+<form id="userForm">
+ <input type="text" id="username">
+ <button type="button" onclick="validate()">Submit</button>
+</form>
+<script>
+function validate() { 
+ let name = document.getElementById("username").value; 
+ if (name === "") { 
+ alert("Name required!");
+ }
+}
+</script>
+<p>TASK 2:CSS Not Applying</p>
+<p class="msg">Hello User</p>
+<style>
+.msg { 
+ color:blue; 
+ font-size: 20px; 
+} 
+</style>
+<p>TASK 3:Button Not Working</p>
+<button id="btn">Click Me</button>
+<script>
+    document.getElementById("btn").onclick = function () { 
+ alert("Clicked"); 
+}; 
+</script>
+<p>TASK 4: Validation Logic Error</p>
+<script>
+let age = 16; 
+if (age >= 18) { 
+ console.log("Eligible"); 
+} else if (age < 18) { 
+ console.log("Not Eligible"); 
+}
+</script>
+<p>TASK 5: Input Value Always Empty</p>
+<input type="text" id="email">
+<button onclick="check()">Check</button>
+<script>
+function check() { 
+ let email = document.getElementById("email").value; 
+ if (email === "") { 
+ alert("Email required"); 
+ } 
+} 
+</script>
+<p class="card">TASK 6: CSS Layout Breaking</p>
+<style>
+.card { 
+ width: 300px; 
+ padding: 20px; 
+ }
+</style>
+<p>TASK 7: Password Match Validation</p>
+<script>
+let pwd = "admin123"; 
+let confirmPwd = "admin123"; 
+if (pwd === confirmPwd) { 
+ console.log("Match"); 
+} else {
+    console.log("Mismatch"); 
+ }
+</script>
+<p class="alert">TASK 8: Hidden Element Still Taking Space (CSS)</p>
+<style>
+.alert { 
+ display: none;
+ }
+</style>
+TASK 9: JS Error Stops Script
+<script>
+console.log("Start"); 
+alert("Hello") 
+console.log("End");
+</script>
+TASK 10: Checkbox Validation
+<input type="checkbox" id="terms">
+<button onclick="submitForm()">Submit</button>
+<script>
+function submitForm() { 
+let terms = document.getElementById("terms");
+ if (terms.checked == false) { 
+ alert("Accept terms"); 
+ } 
+} 
+</script>
+<p>TASK 11: Assignment instead of comparison</p>
+<input type="text" id="mobile" />
+<button onclick="validate()">Submit</button>
+<script>
+ function validate() { 
+ let mobile = document.getElementById("mobile").value; 
+ if ((mobile.length == 10)) { 
+ alert("Valid"); 
+ } else { 
+ alert("Invalid"); 
+ } 
+ } 
+ </script>
+<p>TASK 12: Policy Holder Name Validation</p>
+<input type="text" id="policyName">
+<button onclick="validateName()">Submit</button>
+<script>
+function validateName() { 
+ let name = document.getElementById("policyName").value; 
+ if (name == "") { 
+ alert("Policy holder name required"); 
+ } 
+} 
+</script>
+<p>TASK 13: Insurance Plan Dropdown Validation</p>
+<select id="plan">
+ <option>Select Plan</option>
+ <option>Health</option>
+ <option>Life</option>
+</select>
+<button onclick="checkPlan()">Apply</button>
+ <script>
+ function checkPlan() { 
+ let plan = document.getElementById("plan").value; 
+ if ((plan == "Select Plan")) { 
+ alert("Please choose a plan"); 
+ } 
+ } 
+ </script>
+<p id="policy">TASK 14: Policy Number Display Bug</p>   
+<script>
+let policyNumber = 123456; 
+document.getElementById("policy").innerHTML = policyNumber; 
+</script>
+<p>TASK 15: Claim Amount Validation</p>
+<script>
+let claimAmount = "abc"; 
+if (!isNaN(Number(claimAmount))) { 
+alert("Valid claim"); 
+ } else { 
+ alert("Invalid claim"); 
+ } 
+</script>
+<script>
+let policyType = "Health";
+if (policyType.toLowerCase() === "health") {
+  console.log("Health Policy");
+}
+</script>
+<p>TASK 17: Policy List Rendering Bug</p>
+<ul id="list"></ul>
+<script>
+let policies = ["Life", "Health", "Vehicle"];
+policies.forEach(function (policy) {
+  document.getElementById("list").innerHTML += `<li>${policy}</li>`;
+});
+</script>
+<p>TASK 18: Premium Amount Validation</p>
+<script>
+let premium = "5000"; 
+if (isNaN(Number(premium))) { 
+console.log("Invalid premium"); 
+} else { 
+ console.log("Valid premium"); 
+}
+</script>
