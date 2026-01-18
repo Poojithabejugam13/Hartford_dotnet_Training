@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+    <div class="filter-container " style=" display:flex; gap:10px; margin-bottom:20px;align-items: center; justify-content:center;">
+        <input id="search" placeholder="Search by name" style="border-radius:5px; padding:5px; border:1px solid black" />
+        <select id="branch"style="border-radius:5px; padding:5px; border:1px solid black">
+            <option value="">All</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+        </select>
+        <button onclick="sortByBalance()" style="border-radius:5px; padding:5px; border:1px solid black">Sort by Balance</button>
+        <button onclick="calculateTotalBalance()"style="border-radius:5px; padding:5px; border:1px solid black">Total Balance</button>
+    </div>
+    <form id="addForm" style="margin:auto;width:287px; display:flex; flex-wrap:wrap; justify-content: center;gap:13px; border:1px solid; border-radius:13px; box-shadow: 1px 1px 18px grey;padding:13px;">
+        <h1>Add Account</h1>
+        <input type="text" id="accountNo" placeholder="accountNo" required style="width:100%;border:1px solid; border-radius:4px;padding:8px"/>
+        <input type="text" id="name" placeholder="Name" required style="width:100%;border:1px solid; border-radius:4px;padding:8px">
+        <input type="email" id="email" placeholder="Email" required style="width:100%;border:1px solid; border-radius:4px;padding:8px">
+        <input type="text" id="city" placeholder="Branch" required style="width:100%;border:1px solid; border-radius:4px;padding:8px">
+        <button type="submit" style="background-color: green;border:none;padding:7px;cursor:pointer;">Add Account</button>
+    </form>
+    <div id="loader" class="loader"></div>
+
+    <div id="bank_users" style="margin:47px;display:flex; flex-wrap:wrap; gap:21px; ">
+
+    </div>
+    <script src="example.js"></script>
+</body>
+</html>
