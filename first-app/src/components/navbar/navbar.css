@@ -1,0 +1,33 @@
+.container{
+    background-color: white;
+    top:0;
+    position:sticky;
+    z-index: 887;
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    font-weight: bold;
+    background-color: white;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    list-style: none;
+    font-size: 18px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+    color: #0057b8;
+}

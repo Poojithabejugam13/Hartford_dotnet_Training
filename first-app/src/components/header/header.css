@@ -1,0 +1,30 @@
+.header{
+    margin-top: 41px;;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.header-column{
+    display:flex;
+    padding:48px;
+    flex-direction: column;
+    gap:8px;
+    font-size:17px;
+    width:477px;
+    height:177px;
+}
+button{
+    background-color: purple;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blueviolet;
+}

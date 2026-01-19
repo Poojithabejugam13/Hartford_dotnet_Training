@@ -1,0 +1,18 @@
+.welcome-banner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    height: 341px;
+    width: 400px;
+    margin:40px;
+}
+h1{
+    font-size:78px;
+    margin:40px;
+    color:purple
+}
+*{
+    margin:40px;
+}

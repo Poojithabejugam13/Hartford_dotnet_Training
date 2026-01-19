@@ -1,0 +1,39 @@
+.footer{
+     display: flex;
+     justify-content: space-between;
+}
+.footer-logo{
+    width:77px;
+    height:77px;
+    padding:17px;
+    margin:17px;
+}
+.foo{
+    width:1007px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 187px;;
+    gap:47px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 17px;
+    padding-top: 17px;
+}
+.footer-copy{
+    padding-left: 77%;
+}
+.icon img{
+    width:37px;
+    height:37px;
+}
+.icon{
+    display:flex;
+    gap:37.7px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 47px;
+    padding-left: 437px;
+}
