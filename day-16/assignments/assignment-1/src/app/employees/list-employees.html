@@ -1,0 +1,36 @@
+<div class="max-w-7xl mx-auto px-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-18 ">
+
+    @for (employee of employees; track $index) {
+
+      <div class="rounded-lg shadow-md border border-gray-200 overflow-hidden">
+
+        <img
+          class="w-full h-48 object-cover"
+          [src]="employee.photoPath"
+          alt="Employee Image"
+        />
+
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">
+            {{ employee.name }}
+          </h4>
+
+          <p><strong>Gender:</strong> {{ employee.gender }}</p>
+          <p><strong>Date of Birth:</strong> {{ employee.dateOfBirth | date }}</p>
+          <p><strong>Contact Preference:</strong> {{ employee.contactPreference }}</p>
+          <p><strong>Phone:</strong> {{ employee.phoneNumber }}</p>
+          <p><strong>Email:</strong> {{ employee.email }}</p>
+          <p><strong>Department:</strong> {{ employee.department }}</p>
+          <p>
+            <strong>Status:</strong>
+            {{ employee.isActive ? 'Active' : 'Inactive' }}
+          </p>
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+</div>
