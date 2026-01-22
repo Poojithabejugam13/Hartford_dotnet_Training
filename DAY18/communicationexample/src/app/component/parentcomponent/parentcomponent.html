@@ -1,0 +1,22 @@
+<div class="min-h-screen bg-gray-100 p-8">
+  <h1 class="text-2xl font-bold mb-6">Product Ratings</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <app-child1component
+      *ngFor="let p of products"
+      [product]="p"
+      (ratingsent)="receiveRating($event)">
+    </app-child1component>
+  </div>
+
+  
+  <div class="mt-8 bg-white p-4 rounded shadow">
+    <h2 class="font-semibold mb-2">Ratings Received</h2>
+    <div *ngFor="let p of products">
+      {{ p.name }} :
+      <span class="font-bold text-green-600">
+        {{ ratings[p.id] || 'Not rated' }}
+      </span>
+    </div>
+  </div>
+</div>
