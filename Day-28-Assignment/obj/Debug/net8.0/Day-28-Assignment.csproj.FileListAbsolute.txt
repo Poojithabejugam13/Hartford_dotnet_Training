@@ -1,0 +1,14 @@
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\bin\Debug\net8.0\Day-28-Assignment.exe
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\bin\Debug\net8.0\Day-28-Assignment.deps.json
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\bin\Debug\net8.0\Day-28-Assignment.runtimeconfig.json
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\bin\Debug\net8.0\Day-28-Assignment.dll
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\bin\Debug\net8.0\Day-28-Assignment.pdb
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.AssemblyInfoInputs.cache
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.AssemblyInfo.cs
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.csproj.CoreCompileInputs.cache
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.dll
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\refint\Day-28-Assignment.dll
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.pdb
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\Day-28-Assignment.genruntimeconfig.cache
+C:\dotnet\ParkingLot\Day-28-Assignment\Day-28-Assignment\obj\Debug\net8.0\ref\Day-28-Assignment.dll
