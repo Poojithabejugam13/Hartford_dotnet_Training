@@ -1,0 +1,6 @@
+@SeedingExample_HostAddress = http://localhost:5111
+
+GET {{SeedingExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
